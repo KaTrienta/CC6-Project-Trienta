@@ -2,8 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 import { useRouter } from "next/navigation";
 
 const Contact: React.FC = () => {
@@ -20,7 +18,11 @@ const Contact: React.FC = () => {
         <div className="contact-grid">
           {/* FACEBOOK */}
           <div className="contact-item">
-            <FaFacebook className="contact-icon fb" />
+            <img
+              src="/facebook.png"
+              alt="Facebook"
+              className="contact-icon fb"
+            />
             <a
               href="https://facebook.com"
               target="_blank"
@@ -33,7 +35,11 @@ const Contact: React.FC = () => {
 
           {/* INSTAGRAM */}
           <div className="contact-item">
-            <FaInstagram className="contact-icon ig" />
+            <img
+              src="/instagram.png"
+              alt="Instagram"
+              className="contact-icon ig"
+            />
             <a
               href="https://instagram.com"
               target="_blank"
@@ -46,7 +52,11 @@ const Contact: React.FC = () => {
 
           {/* GMAIL → INTERNAL LINK */}
           <div className="contact-item">
-            <SiGmail className="contact-icon gmail" />
+            <img
+              src="/gmail.png"
+              alt="Gmail"
+              className="contact-icon gmail"
+            />
             <Link href="/contact/gmail" className="contact-btn">
               Gmail
             </Link>
